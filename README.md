@@ -1,3 +1,3 @@
 # About
 
-Leonhardt (Leon)，本科就读于华中科技大学电子信息与工程学院。
+Leonhardt (Leon)，本科就读于华中科技大学电子信息与通信学院。
