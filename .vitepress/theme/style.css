@@ -1,0 +1,156 @@
+html {
+  font-size: 100%;
+}
+
+:root {
+  color-scheme: light dark;
+  font-family:
+    "HarmonyOS Sans SC", "Noto Sans SC", "PingFang SC",
+    "Microsoft YaHei", Inter, ui-sans-serif, system-ui,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f7f4ef;
+  color: #26211c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background: #11100e;
+    color: #f2eee8;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.split-home {
+  width: min(1120px, calc(100vw - 48px));
+  min-height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 300px 1px minmax(0, 720px);
+  column-gap: 44px;
+  align-items: start;
+}
+
+.profile-pane {
+  position: sticky;
+  top: 12vh;
+  min-height: 76vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile-pane .header-anchor,
+.main-content .header-anchor {
+  display: none;
+}
+
+.profile-pane img {
+  width: 148px;
+  height: 148px;
+  object-fit: cover;
+  margin: 0 auto 24px;
+  border-radius: 0;
+}
+
+.profile-pane h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+.profile-pane p {
+  margin: 12px 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.profile-pane a {
+  color: #4f8796;
+}
+
+.divider {
+  position: sticky;
+  top: 12vh;
+  height: 76vh;
+  background: color-mix(in srgb, currentColor 18%, transparent);
+}
+
+.main-content {
+  padding: 14vh 0 24vh;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.main-content h1 {
+  margin: 0 0 24px;
+  font-size: 2rem;
+  line-height: 1.05;
+  letter-spacing: -0.06em;
+}
+
+.main-content h2 {
+  margin: 64px 0 20px;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  letter-spacing: -0.055em;
+}
+
+.main-content p {
+  margin: 20px 0;
+}
+
+.normal-page {
+  width: min(760px, calc(100vw - 48px));
+  margin: 0 auto;
+  padding: 80px 0 120px;
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 760px) {
+  .split-home {
+    display: block;
+    width: min(680px, calc(100vw - 32px));
+  }
+
+  .profile-pane {
+    position: static;
+    min-height: auto;
+    padding: 56px 0 32px;
+  }
+
+  .divider {
+    position: static;
+    width: 100%;
+    height: 1px;
+    margin: 24px 0;
+  }
+
+  .main-content {
+    padding: 56px 0 56px;
+    font-size: 0.9375rem;
+  }
+
+  .main-content h1 {
+    font-size: 1.625rem;
+  }
+
+  .main-content h2 {
+    font-size: 1.25rem;
+  }
+}

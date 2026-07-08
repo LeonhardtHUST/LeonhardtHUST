@@ -1,25 +1,18 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
-layout: home
-
-hero:
-  name: "LeonhardtHUST"
-  text: "Leon's Readme"
-  tagline: My great project tagline
-  actions:
-    - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
-
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+layout: split-home
+title: Leonhardt
 ---
 
+# Hello world
+
+Some self-introduction here.
+
+You may scroll this page to view more details below.
+
+## This section is
+
+Rendered from a markdown file.
+
+As well as the left fixed section.
+
+But the two sections are from different source files.
